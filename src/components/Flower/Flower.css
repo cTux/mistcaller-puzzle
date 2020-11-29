@@ -1,0 +1,57 @@
+.flower {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.flower-inner {
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.petal {
+    width: 50%;
+    height: 25%;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid lightblue;
+    box-sizing: border-box;
+}
+.flower.shaded .petal {
+    background-color: lightblue;
+}
+
+.petal:nth-child(1) {
+    top: 0;
+    transform: rotate(90deg) translate(25%, -100%);
+}
+.petal:nth-child(2) {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.petal:nth-child(3) {
+    bottom: 0;
+    transform: rotate(90deg) translate(-25%, -100%);
+}
+.petal:nth-child(4) {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle {
+    width: 95%;
+    height: 95%;
+    border: 5px solid rosybrown;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
